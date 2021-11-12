@@ -4,7 +4,7 @@ theme: seriph
 colorSchema: dark
 # random image from a curated Unsplash collection by Anthony
 # like them? see https://unsplash.com/collections/94734566/slidev
-background: './images/background.jpg'
+background: https://source.unsplash.com/collection/94734566/1920x1080
 # apply any windi css classes to the current slide
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
@@ -57,7 +57,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 layout: image-right
-image: './images/background.jpg'
+image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 <div class="container">
@@ -277,7 +277,7 @@ Dominé par :
 
 ---
 layout: image-right
-image: './images/background.jpg'
+image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 <div class="container">
@@ -408,7 +408,7 @@ image: './images/background.jpg'
 
 ---
 layout: image-right
-image: './images/background.jpg'
+image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # Conclusion
