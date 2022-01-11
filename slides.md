@@ -91,7 +91,7 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 _Nb: metaframework = framework écrit sur un autre framework_
 
-<img style="height: 200px;" src="images/wtc.PNG" />
+// image WTC Japon
 
 </v-clicks>
 
