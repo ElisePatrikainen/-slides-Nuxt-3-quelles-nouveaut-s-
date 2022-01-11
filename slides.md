@@ -6,7 +6,7 @@ colorSchema: dark
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://source.unsplash.com/collection/94734566/1920x1080
 # apply any windi css classes to the current slide
-class: 'text-center'
+class: "text-center"
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
 # show line numbers in code blocks
@@ -22,7 +22,7 @@ drawings:
   persist: false
 ---
 
-# Nuxt 3, quelles nouveautés ?
+# A la découverte de Nuxt 3 ⭐
 
 <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
@@ -42,9 +42,11 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 # A propos de moi
 
+--
+
 <v-click>
 
-- développeuse freelance front-end (Vue, Angular) en mission chez Vesperia
+- développeuse freelance front-end (Vue, Angular)
 - instructrice LinkedIn Learning
 
 </v-click>
@@ -81,197 +83,131 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 # Nuxt: définition
 
-<!-- Component usage: this will be invisible until you press "next" -->
-<v-click>
-
-- v2: "Le framework Vue intuitif"
-
-</v-click>
-
-<v-click>
-
-- v3: "The Hybrid Vue Framework"
-
-</v-click>
-
-<v-click>
-
-=> meta-framework basé sur Vue
-
-</v-click>
-
----
-
-# Contexte
-
-<div style="padding: 30px 0">
-<v-click>
-
-- front-end
-
-</v-click>
-
-<v-click>
-
-- SPA
-
-</v-click>
-</div>
-
-<div>
-<v-click>
-
-Dominé par :
-
-</v-click>
+--
 
 <v-clicks>
 
-<ul>
-<li>Angular</li>
-<li>React</li>
-<li>Vue</li>
-<li class="medium">Svelte</li>
-<li class="small">Riot</li>
-<li class="small">Solid</li>
-</ul>
+<div style="margin-bottom: 15px">Méta-framework basé sur Vue.</div>
+
+_Nb: metaframework = framework écrit sur un autre framework_
+
+<img style="height: 200px;" src="images/wtc.PNG" />
 
 </v-clicks>
-</div>
-
-<style>
-
-.medium {
-  opacity: 60%
-}
-.small {
-  opacity: 40%
-}
-</style>
 
 ---
 
-# Pourquoi des meta-frameworks ?
+# Nuxt: définition
 
-<v-clicks style="padding: 30px 0">
+--
 
-- Angular : "The modern web developer's platform" *=> langage, directory structure, UI runtime, routing, formulaires, client HTTP, tests...*
-- React : "Une bibliothèque JavaScript pour créer des interfaces utilisateurs" *=> UI runtime*
-- Vue : "Le Framework JavaScript Évolutif" *=> UI runtime + routing et state management non imposés*
+<div style="margin-bottom: 15px">Méta-framework basé sur Vue.</div>
 
-</v-clicks>
+<!-- Component usage: this will be invisible until you press "next" -->
+<v-clicks>
 
-<v-click>
-
-=> React et Vue : grand flexibilité, mais difficultés pour bootstrap et implémentation de features clés (SSR, ...)
-
-</v-click>
-
----
-
-# Pourquoi des meta-frameworks ?
-
-<v-clicks style="padding: 30px 0">
-
-- React : Next, Gatsby (SSG)
-- Vue : Nuxt, Quasar, Gridsome (SSG)
-
-</v-clicks>
-
-<v-click>
-
->"To me, that sounds like React is a kernel. Webpack/Create React App are bootloaders. Next.js and Gatsby are the closest things we've got to distros."
+> "To me, that sounds like React is a kernel [...] Next.js and Gatsby are the closest things we've got to distros."
 >
->James K Nelson
+> James K Nelson
 
-</v-click>
-
----
-
-# Nuxt (hors v3)
-
-
-<v-click>
-
-<div style="padding: 30px 0 10px 0">Préconfiguration :</div>
-
-</v-click>
-
-<v-clicks style="padding: 0px 0 10px 0">
-
-- Conventions : structure de dossiers 
-- Bootstrap : pré-intégration du router, de Vuex (Nuxt 2) et du **SSR**
+> _=> adaptable à l'éco-système Vue (Nuxt, Quasar, Gridsome...)_
 
 </v-clicks>
 
+---
 
-<v-click>
+# Et qu'apporte Nuxt (hors v3) ?
 
-<div style="padding: 20px 0 10px 0">Features :</div>
+--
 
-</v-click>
+<v-clicks>
+
+Vue : "Le Framework JavaScript Évolutif" _=> UI runtime (+ routing et state management non imposés)_
+
+</v-clicks>
+
+---
+
+# Et qu'apporte Nuxt (hors v3) ?
+
+--
+
 <v-clicks style="padding: 0px 0 10px 0">
 
+- Bootstrap facilité: préconfiguration, conventions\* (structure de dossiers)
 - Expérience developpeur : routing (+ state management) par système de fichiers, auto-import des composants
-- Modes de rendus : SSG, outils (hooks) *=> amélioration de **TTC** et **SEO** par pre-rendering HTML et pre-fetch de data, architecture Jamstack*
+- Modes de rendus : SSR et SSG (+ outils associés) _=> amélioration performances (**TTC** et **SEO**)_
 
 </v-clicks>
 
 <v-click>
 
-*Nb: Nuxt reste relativement peu 'opinionated' car la plupart des implémentations sont configurables.*
+\* _Nuxt reste relativement peu 'opinionated' car la plupart des implémentations sont configurables._
 
 </v-click>
 
 ---
 
 # SSR et SSG
+--
 
-<v-click>
+<v-clicks>
 
-<div style="padding: 20px 0 10px 0">Objectif: diminuer le TTC d'une SPA (+ améliorer SEO)</div>
+Bootstrap d'une SPA dans un navigateur : 
 
-</v-click>
+<svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 795px; min-height: 165px; background-color: transparent; background-image: none;"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur><feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite><feBlend in="SourceGraphic" in2="offsetBlur"></feBlend></filter></defs><g transformOrigin="0 0" transform="scale(1,1)translate(-82,-337)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 110 420 L 753.63 420" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 110 420 L 753.63 420" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 758.88 420 L 751.88 423.5 L 753.63 420 L 751.88 416.5 Z" fill="#ffffff" stroke="#ffffff" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 760 460 L 760 436.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 760 460 L 760 436.37" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 760 431.12 L 763.5 438.12 L 760 436.37 L 756.5 438.12 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="280" y="420" width="310" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="280" y="420" width="310" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 435px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement ressources (JS, assets...)</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 640 430 L 640 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 640 430 L 640 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="650" y="420" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="650" y="420" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 695px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Bootstrap</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="710" y="455" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="710" y="455" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 470px; margin-left: 755px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">TTC* + TTI**</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="770" y="405" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="770" y="405" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 420px; margin-left: 815px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">SPA ready</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 430 L 230 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 430 L 230 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="120" y="420" width="110" height="50" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="120" y="420" width="110" height="50" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 445px; margin-left: 175px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement <br>HTML initial</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 375 L 230 398.63" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 375 L 230 398.63" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 230 403.88 L 226.5 396.88 L 230 398.63 L 233.5 396.88 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="90" y="345" width="290" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="90" y="345" width="290" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 360px; margin-left: 235px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">Affichage index.html (point d'entrée)</div></div></div></foreignObject></g></g></g><g></g><g></g></g></svg>
 
+\* *TTC = Time To Content (affichage du contenu de la page lors de la première requête)*
 
-<v-click>
-
-<div style="padding: 20px 0 10px 0; font-style: italic; color: grey">Nb: TTC = Time To Content (affichage du contenu de la page lors de la première requête)</div>
-
-</v-click>
+\*\* *TTI = Time To Interaction (SPA fonctionnelle)*
 
 
-<v-click>
+<div style="padding: 20px 0 10px 0">=> Objectif SSR (et SSG): diminuer le TTC (+ améliorer SEO)</div>
 
-<div style="padding: 20px 0 10px 0; font-style: italic; color: grey">Nb2: SPA ont un fort TTC (et un SEO potentiellement diminué) car le contenu de la page d'une SPA n'est visible qu'une fois la SPA chargée (temps, notemment sur faible réseau)</div>
-
-</v-click>
+</v-clicks>
 
 ---
 
 # SSR et SSG
+--
 
-<v-click>
+<v-clicks>
 
-<div style="padding: 20px 0 10px 0">Comment? utiliser le serveur pour :</div>
+SSR d'une SPA : 
 
-</v-click>
+<svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 936px; min-height: 170px; background-color: transparent; background-image: none;"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur><feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite><feBlend in="SourceGraphic" in2="offsetBlur"></feBlend></filter></defs><g transformOrigin="0 0" transform="scale(1,1)translate(59,-337)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 121.36 417.97 L 753.63 419.98" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 121.36 417.97 L 753.63 419.98" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 758.88 420 L 751.87 423.47 L 753.63 419.98 L 751.89 416.47 Z" fill="#ffffff" stroke="#ffffff" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 760 460 L 760 436.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 760 460 L 760 436.37" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 760 431.12 L 763.5 438.12 L 760 436.37 L 756.5 438.12 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="280" y="420" width="310" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="280" y="420" width="310" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 435px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement ressources (JS, assets...)</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 640 430 L 640 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 640 430 L 640 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="650" y="420" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="650" y="420" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 695px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Bootstrap</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="735" y="455" width="40" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="735" y="455" width="40" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 470px; margin-left: 755px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">TTI</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="770" y="405" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="770" y="405" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 420px; margin-left: 815px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">SPA ready</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 430 L 230 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 430 L 230 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="120" y="420" width="110" height="70" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="120" y="420" width="110" height="70" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 455px; margin-left: 175px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement <br>HTML page <br>requêtée</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 375 L 230 398.63" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 375 L 230 398.63" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 230 403.88 L 226.5 396.88 L 230 398.63 L 233.5 396.88 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="210" y="345" width="50" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="210" y="345" width="50" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 360px; margin-left: 235px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">TTC</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 119 430 L 119 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 119 430 L 119 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-50" y="420" width="170" height="70" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="-50" y="420" width="170" height="70" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 455px; margin-left: 35px;"><div data-drawio-colors="color: #99CCFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(153, 204, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Génération sur&nbsp;<br>serveur du HTML de <br>la page requêtée</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -51.36 418.81 L 120 419" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M -51.36 418.81 L 120 419" fill="none" stroke="#99ccff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"></path></g></g><g></g><g></g></g></svg>
 
-<v-clicks style="padding: 0px 0 10px 0">
+Avantages :
+- faible TTI
+- meilleur SEO
 
-- pré-rendre le contenu de la page
-- 'pre-fetcher' les datas (plutôt que de le faire dans un second temps de façon asynchrone)
+Mais : moins scalable
 
 </v-clicks>
 
 ---
 
 # SSR versus SSG
+--
 
-<v-clicks style="padding: 0px 0 10px 0">
+<v-clicks>
 
-- SSR : pré-rendering au run-time *=> flexibilité*
-- SSG : pré-rendering au build *=> architecture Jamstack, scalabilité (fichiers statiques, fetch data réduit)*
+SSR avec opération serveur:
+
+<svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 1095px; min-height: 165px; background-color: transparent; background-image: none; transform: scaleX(0.85) translateX(-10%)"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur><feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite><feBlend in="SourceGraphic" in2="offsetBlur"></feBlend></filter></defs><g transformOrigin="0 0" transform="scale(1,1)translate(198,-342)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 131.36 417.97 L 753.63 419.98" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 131.36 417.97 L 753.63 419.98" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 758.88 420 L 751.87 423.47 L 753.63 419.98 L 751.89 416.47 Z" fill="#ffffff" stroke="#ffffff" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 760 460 L 760 436.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 760 460 L 760 436.37" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 760 431.12 L 763.5 438.12 L 760 436.37 L 756.5 438.12 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="280" y="420" width="310" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="280" y="420" width="310" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 435px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement ressources (JS, assets...)</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 640 430 L 640 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 640 430 L 640 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="650" y="420" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="650" y="420" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 695px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Bootstrap</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="620" y="460" width="260" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="620" y="460" width="260" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 475px; margin-left: 750px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">TTI (avec données dynamiques)</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="770" y="405" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="770" y="405" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 420px; margin-left: 815px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">SPA ready</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 430 L 230 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 430 L 230 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="120" y="420" width="110" height="70" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="120" y="420" width="110" height="70" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 455px; margin-left: 175px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement <br>HTML page <br>requêtée</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 375 L 230 398.63" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 375 L 230 398.63" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 230 403.88 L 226.5 396.88 L 230 398.63 L 233.5 396.88 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="100" y="350" width="270" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="100" y="350" width="270" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 365px; margin-left: 235px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">TTC (avec données dynamiques)</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 119 430 L 119 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 119 430 L 119 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-40" y="420" width="170" height="70" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="-40" y="420" width="170" height="70" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 455px; margin-left: 45px;"><div data-drawio-colors="color: #99CCFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(153, 204, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Génération sur&nbsp;<br>serveur du HTML de <br>la page requêtée</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -190 419 L 120 419" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M -190 419 L 120 419" fill="none" stroke="#99ccff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -40 430 L -40 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M -40 430 L -40 410" fill="none" stroke="#99ccff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-180" y="420" width="140" height="50" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="-180" y="420" width="140" height="50" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 445px; margin-left: -110px;"><div data-drawio-colors="color: #99CCFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(153, 204, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Récupération de <br>données en DB</div></div></div></foreignObject></g></g></g><g></g><g></g></g></svg>
+
+</v-clicks>
+
+---
+
+# SSR versus SSG
+--
+
+<v-clicks>
+
+SSG d'une SPA :
+
+// todo
 
 </v-clicks>
 
@@ -303,7 +239,7 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 <v-click>
 
-*cf Daniel Roe, Edge-rendering with Nuxt, Vuejs Amsterdam 2021*
+_cf Daniel Roe, Edge-rendering with Nuxt, Vuejs Amsterdam 2021_
 
 </v-click>
 
@@ -329,13 +265,20 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 ---
 
+Nuxt :
+
+- v2 : "Le framework Vue intuitif"
+- v3 : "The hybrid Vue framework"
+
+---
+
 # Nuxt 3 : support
 
 <v-clicks style="padding: 30px 0 10px 0">
 
 - TypeScript : types auto-générés (composants globaux, composables, routes API...)
 - Vue 3 : API de composition (dossier 'composables', auto-imports), API suspense
-- Bundler : Webpack 5, Vite 
+- Bundler : Webpack 5, Vite
 - Transpiler : esbuild
 - State management : `useState`
 
@@ -407,8 +350,10 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 </v-clicks>
 
 ---
+
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
+
 ---
 
 # Conclusion
@@ -418,4 +363,3 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 <div style="padding: 30px 0 10px 0">Nuxt semble avoir pris un tournant avec cette version 3, et dépasse le 'meta-framework' Vue pour se positionner plutôt comme 'an open source framework making web development simple and powerful'.</div>
 
 </v-click>
-
