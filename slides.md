@@ -22,7 +22,7 @@ drawings:
   persist: false
 ---
 
-# A la découverte de Nuxt 3 ⭐
+# Découverte de Nuxt 3 ⭐
 
 <div class="abs-br m-6 flex gap-2">
   <button @click="$slidev.nav.openInEditor()" title="Open in Editor" class="text-xl icon-btn opacity-50 !border-none !hover:text-white">
@@ -85,26 +85,10 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 --
 
-<v-clicks>
-
-<div style="margin-bottom: 15px">Méta-framework basé sur Vue.</div>
-
-_Nb: metaframework = framework écrit sur un autre framework_
-
-// image WTC Japon
-
-</v-clicks>
-
----
-
-# Nuxt: définition
-
---
-
-<div style="margin-bottom: 15px">Méta-framework basé sur Vue.</div>
-
 <!-- Component usage: this will be invisible until you press "next" -->
 <v-clicks>
+
+<div style="margin-bottom: 15px">Méta-framework basé sur Vue.</div>
 
 > "To me, that sounds like React is a kernel [...] Next.js and Gatsby are the closest things we've got to distros."
 >
@@ -168,7 +152,7 @@ Bootstrap d'une SPA dans un navigateur :
 
 ---
 
-# SSR et SSG
+# SSR
 --
 
 <v-clicks>
@@ -177,17 +161,12 @@ SSR d'une SPA :
 
 <svg style="left: 0px; top: 0px; width: 100%; height: 100%; display: block; min-width: 936px; min-height: 170px; background-color: transparent; background-image: none;"><defs><filter id="dropShadow"><feGaussianBlur in="SourceAlpha" stdDeviation="1.7" result="blur"></feGaussianBlur><feOffset in="blur" dx="3" dy="3" result="offsetBlur"></feOffset><feFlood flood-color="#3D4574" flood-opacity="0.4" result="offsetColor"></feFlood><feComposite in="offsetColor" in2="offsetBlur" operator="in" result="offsetBlur"></feComposite><feBlend in="SourceGraphic" in2="offsetBlur"></feBlend></filter></defs><g transformOrigin="0 0" transform="scale(1,1)translate(59,-337)"><g></g><g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 121.36 417.97 L 753.63 419.98" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 121.36 417.97 L 753.63 419.98" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 758.88 420 L 751.87 423.47 L 753.63 419.98 L 751.89 416.47 Z" fill="#ffffff" stroke="#ffffff" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 760 460 L 760 436.37" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 760 460 L 760 436.37" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 760 431.12 L 763.5 438.12 L 760 436.37 L 756.5 438.12 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="280" y="420" width="310" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="280" y="420" width="310" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 435px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement ressources (JS, assets...)</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 640 430 L 640 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 640 430 L 640 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="650" y="420" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="650" y="420" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 435px; margin-left: 695px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Bootstrap</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="735" y="455" width="40" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="735" y="455" width="40" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 470px; margin-left: 755px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">TTI</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="770" y="405" width="90" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="770" y="405" width="90" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 420px; margin-left: 815px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">SPA ready</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 430 L 230 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 430 L 230 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="120" y="420" width="110" height="70" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="120" y="420" width="110" height="70" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 455px; margin-left: 175px;"><div data-drawio-colors="color: #FFFFFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 255, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Chargement <br>HTML page <br>requêtée</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 230 375 L 230 398.63" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 230 375 L 230 398.63" fill="none" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="stroke"></path><path d="M 230 403.88 L 226.5 396.88 L 230 398.63 L 233.5 396.88 Z" fill="#ffcc99" stroke="#ffcc99" stroke-miterlimit="10" pointer-events="all"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="210" y="345" width="50" height="30" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="210" y="345" width="50" height="30" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 360px; margin-left: 235px;"><div data-drawio-colors="color: #FFCE9F; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(255, 206, 159); line-height: 1.2; pointer-events: all; white-space: nowrap;">TTC</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M 119 430 L 119 410" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M 119 430 L 119 410" fill="none" stroke="#ffffff" stroke-miterlimit="10" pointer-events="stroke"></path></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><rect x="-50" y="420" width="170" height="70" fill="none" stroke="white" pointer-events="stroke" visibility="hidden" stroke-width="9"></rect><rect x="-50" y="420" width="170" height="70" fill="none" stroke="none" pointer-events="all"></rect></g><g style=""><g><foreignObject pointer-events="none" width="100%" height="100%" style="overflow: visible; text-align: left;"><div style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 1px; height: 1px; padding-top: 455px; margin-left: 35px;"><div data-drawio-colors="color: #99CCFF; " style="box-sizing: border-box; font-size: 0px; text-align: center;"><div style="display: inline-block; font-size: 17px; font-family: Helvetica; color: rgb(153, 204, 255); line-height: 1.2; pointer-events: all; white-space: nowrap;">Génération sur&nbsp;<br>serveur du HTML de <br>la page requêtée</div></div></div></foreignObject></g></g><g transform="translate(0.5,0.5)" style="visibility: visible;"><path d="M -51.36 418.81 L 120 419" fill="none" stroke="white" stroke-miterlimit="10" pointer-events="stroke" visibility="hidden" stroke-width="9"></path><path d="M -51.36 418.81 L 120 419" fill="none" stroke="#99ccff" stroke-miterlimit="10" stroke-dasharray="3 3" pointer-events="stroke"></path></g></g><g></g><g></g></g></svg>
 
-Avantages :
-- faible TTI
-- meilleur SEO
-
-Mais : moins scalable
 
 </v-clicks>
 
 ---
 
-# SSR versus SSG
+# SSR
 --
 
 <v-clicks>
@@ -198,16 +177,51 @@ SSR avec opération serveur:
 
 </v-clicks>
 
+
 ---
 
-# SSR versus SSG
+# SSR
+--
+
+<v-clicks>
+
+Avantages :
+- faible TTC
+- meilleur SEO
+- flexible
+
+Inconvénients :
+- moins scalable
+
+</v-clicks>
+
+---
+
+# SSG
 --
 
 <v-clicks>
 
 SSG d'une SPA :
 
-// todo
+Même principe mais avec prégénération au moment du build.
+
+</v-clicks>
+
+---
+
+# SSR et SSG
+--
+
+<v-clicks>
+
+Avantages :
+- faible TTC
+- meilleur SEO
+- scalabilité (architecture JamStack)
+
+Inconvénients :
+- moins flexible que le SSR
 
 </v-clicks>
 
@@ -236,6 +250,7 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # Context global
+--
 
 <v-click>
 
@@ -265,7 +280,10 @@ _cf Daniel Roe, Edge-rendering with Nuxt, Vuejs Amsterdam 2021_
 
 ---
 
-Nuxt :
+# Grandes lignes
+--
+
+Définitions de Nuxt :
 
 - v2 : "Le framework Vue intuitif"
 - v3 : "The hybrid Vue framework"
@@ -273,8 +291,9 @@ Nuxt :
 ---
 
 # Nuxt 3 : support
+--
 
-<v-clicks style="padding: 30px 0 10px 0">
+<v-clicks>
 
 - TypeScript : types auto-générés (composants globaux, composables, routes API...)
 - Vue 3 : API de composition (dossier 'composables', auto-imports), API suspense
@@ -287,8 +306,9 @@ Nuxt :
 ---
 
 # Nuxt 3 : expérience développeur
+--
 
-<v-click style="padding: 30px 0 10px 0">
+<v-click>
 
 <Tweet id="1451192466049093633" scale="0.65" />
 
@@ -297,29 +317,31 @@ Nuxt :
 ---
 
 # Nuxt 3 : 'big features'
+--
 
-<v-clicks style="padding: 30px 0 10px 0">
+<v-clicks>
 
 - Nuxt Kit : modules cross-version
 - CLI : Nuxi
 - Dev tools (à venir)
-- Rendering server : Nitro 🔥 (basé sur le serveur h3 du repository unjs)
+- **Rendering server : Nitro 🔥 (basé sur le serveur h3 du repository unjs)**
 
 </v-clicks>
 
 ---
 
 # Nuxt 3 : Nitro 🔥
+--
 
 <v-click >
 
-<div style="padding: 30px 0 10px 0">Features :</div>
+<div>Features :</div>
 
 </v-click>
 <v-clicks style="padding: 0px 0 0px 0">
 
 - server API (génération automatique de types)
-- mode hybride : SSR et SSG
+- mode hybride (à venir) : SSR et SSG
 
 </v-clicks>
 
@@ -343,23 +365,23 @@ Nuxt :
 
 <v-clicks style="padding: 0px 0 0px 0">
 
-- détection automatique des plateformes serverless (Netlify, Vercel, Azure, AWS, and CloudFlare Workers)
 - cold start optimisé
 - plus léger (NFT)
+- détection automatique des plateformes serverless (Netlify, Vercel, Azure, AWS, and CloudFlare Workers)
 
 </v-clicks>
 
 ---
-
 layout: image-right
 image: https://source.unsplash.com/collection/94734566/1920x1080
-
 ---
 
 # Conclusion
+--
 
 <v-click>
 
-<div style="padding: 30px 0 10px 0">Nuxt semble avoir pris un tournant avec cette version 3, et dépasse le 'meta-framework' Vue pour se positionner plutôt comme 'an open source framework making web development simple and powerful'.</div>
+Nuxt a pris un tournant avec cette version 3, et dépasse le 'meta-framework' Vue pour se positionner plutôt comme :
+> 'an open source framework making web development simple and powerful'
 
 </v-click>
